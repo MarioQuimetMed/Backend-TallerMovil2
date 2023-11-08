@@ -1,6 +1,7 @@
+import jwt from 'jsonwebtoken';
+
 import {envs} from '../config/envs'
 
-import jwt from 'jsonwebtoken';
 
 export const generateToken = (Uid: string): Promise<string | undefined> => {
   return new Promise((resolve, reject) => {

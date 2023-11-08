@@ -19,10 +19,30 @@ model Cliente{
   password            String @db.Text
   telefono            String @db.VarChar(8)
 
+  //vehiculos
+  vehiculos           Vehiculo[]
+
   //creado y actualizado
   createdAt           DateTime @default(now())
   updatedAt           DateTime @updatedAt @default(now())       
 }
+//vehiculos
+model Vehiculo{
+  id                  Int @id @default(autoincrement())
+  marca               String @db.VarChar(40)
+  modelo              String @db.VarChar(40)
+  placa               String @db.VarChar(40)
+  year                String @db.VarChar(4)
+  img                 String @db.Text
+  //clientes
+  clienteId           Int
+  cliente             Cliente @relation(fields: [clienteId],references: [id],onDelete: Cascade,onUpdate: Cascade)
+
+  //creado y actualizado
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt @default(now())  
+}
+
 
 //tecnicos
 model Tecnico{

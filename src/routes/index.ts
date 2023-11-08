@@ -2,6 +2,7 @@ import {Router} from 'express'
 
 import {ClientesRoute} from './clientes.routes'
 import {AuthRoute} from './auth.routes'
+import { VehiculoRoutes } from './vehiculo.routes';
 
 
 export class Routes {
@@ -15,6 +16,11 @@ export class Routes {
     //rutas del auth
     route.use("/auth", AuthRoute.router)
 
+
+    //rutas de los vehiculos de cada cliente
+    route.use("/vehiculo",VehiculoRoutes.router)
+
+    //retorna todas las rutas para el server
     return route;
   }
 }

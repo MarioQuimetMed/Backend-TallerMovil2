@@ -3,5 +3,6 @@ import {PrismaClient} from '@prisma/client'
 
 export const {
   cliente,
-  tecnico
+  tecnico,
+  vehiculo  
 } = new PrismaClient();
