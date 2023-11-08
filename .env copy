@@ -10,3 +10,8 @@ DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=pub
 
 PORT = 3000
 SECRET_KEY_JWT = millavesecreta
+
+
+NOMBRE_CUENTA_STORAGE = parcialsi2
+KEY_CUENTA_STORAGE= MXUK+XrOE+o3vbN0tXqPTRER9AkwOOsDzRHUqtRUgeSZIo6Ang5j79AtjUkN1COG/oJYBeFfvKrh+AStfC4ZvQ==
+HOST_CUENTA_STORAGE= https://parcialsi2.blob.core.windows.net/

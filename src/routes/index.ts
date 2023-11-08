@@ -9,6 +9,7 @@ export class Routes {
   constructor(){}
 
   static get routes():Router{
+    //para manejar todas las rutas de las otras rutas
     const route = Router();
     //rutas de clientes
     route.use("/cliente",ClientesRoute.router);
