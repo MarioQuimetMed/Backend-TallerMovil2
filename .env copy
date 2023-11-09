@@ -5,7 +5,8 @@
 # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
 # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
 
-DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+//DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+DATABASE_URL="postgres://default:zMmxeLJfg62U@ep-hidden-wind-90805637.us-east-1.postgres.vercel-storage.com:5432/verceldb"
 
 
 PORT = 3000
